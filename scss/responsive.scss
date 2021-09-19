@@ -1,0 +1,331 @@
+@import '_mixin';
+
+
+@media(max-width:500px) {
+
+    // ------------------------
+    // 全体構造
+    // ------------------------
+    .page {
+        margin: 0;
+    }
+
+    // ----------------------------------
+    // トップページ 
+    // ----------------------------------
+    #top {
+        header {
+            background-image: url(../images/header-black.png);
+            background-repeat: no-repeat;
+            background-size: auto;
+            height: 71px;
+            width: 100%;
+            position: sticky;
+
+            .inner {
+                width: auto;
+            }
+
+            h1 {
+                position: absolute;
+                top: 8px;
+                left: 8px;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+
+            nav ul {
+                width: 195px;
+                display: flex;
+                position: absolute;
+                top: 12px;
+                right: 70px;
+            }
+        }
+
+        // ----------------------------------
+        // トップイメージ
+        // ----------------------------------
+        .top-image img {
+            width: 100%;
+            height: 340px;
+            margin-top: -40px;
+        }
+
+        .top-image {
+            position: relative;
+            z-index: -1;
+            background-image: url(../images/main-image.jpg);
+
+            h1 {
+                font-size: 23px;
+                letter-spacing: 5px;
+                border: solid 2px #ffffff;
+                padding: 13px 40px;
+            }
+        }
+
+        // ----------------------------------
+        // Our Hotel
+        // ----------------------------------
+        .about {
+            background-image: url(../images/top-bg-black.png);
+            background-size: 100% 100%;
+            background-position: center;
+            z-index: 1;
+            width: 100%;
+
+            h2 {
+                font-size: 55px;
+                width: 100%;
+            }
+
+            p {
+                width: 100%;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .inner {
+                width: 100%;
+                padding: 0 10px;
+                position: static;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);        
+            }
+        }
+
+        // ----------------------------------
+        // ルーム一覧
+        // ----------------------------------
+        .room {
+            background-image: url(../images/hotel-image.jpg);
+            background-size: 100% 100%;
+            padding: 150px 0;
+            height: 100vh;
+            width: 100%;
+            .inner {
+                width: 100%;
+                padding: 0 10px;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                margin-top: 120px;
+                .left {
+                    width: 100%;
+                }
+                h2 img {
+                    width: 250px;
+                }
+                h3 {
+                    color: #ECECEC;
+                    margin-bottom: 15px;
+                    margin-top: -15px;
+                }
+                p {
+                    line-height: 1.8;
+                    margin-bottom: 10px;
+                    color: #ececec;
+                }        
+                .button {
+                    background-color: #77A06C;
+                    width: 160px;
+                    p {
+                        line-height: 40px;
+                        color: #1A2E64;
+                    }
+                }
+            }
+        }
+
+        // ----------------------------------
+        // グッズ
+        // ----------------------------------
+        .goods {
+            height: 100vh;
+            width: 100%;
+            .inner {
+                width: 100%;
+                position: static;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0); 
+                margin-top: -80px;           
+                .left {
+                    float: none;
+                    width: 100%;
+                    padding: 0 10px;
+                    position: static;
+                    top: 50;
+                    transform: translate(0, 0);
+                
+                }
+                .right {
+                    float: none;
+                    width: 100%;
+                    padding: 0 5px;
+                }
+        
+            }
+        }
+        // ----------------------------------
+        // アクセス
+        // ----------------------------------
+        .access {
+            height: 100%;
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 80px 0;
+            .inner {
+                overflow: hidden;
+                position: static;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+                width: 100%;
+                .left {
+                    float: none;
+                    width: 100%;
+                    padding: 0 10px;
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 100%;
+                }
+                .right {
+                    width: 100%;
+                    float: none;
+                    position: static;
+                    top: 0;
+                    transform: translate(0, 0);
+                    right: 0;
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        // ----------------------------------
+        // フッター
+        // ----------------------------------
+        footer {
+            overflow: hidden;
+            height: 100%;
+            position: static;
+            .right {
+                float: none;
+                margin-right: 0;
+                position: static;
+                right: 0;
+                top: 0;
+                width: 100%;
+                padding: 0 10px;
+                margin-bottom: 30px;
+                .phone {
+                    text-align: center;
+                }
+                .icon {
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                .icon li {
+                    margin-right: 0;
+                    text-align: center;
+                }
+                .instagram {
+                    margin-right: 10px;
+                }
+                .facebook {
+                    margin-left: 10px;
+                }
+            }
+            .left {
+                float: none;
+                margin-left: 0;
+                position: static;
+                top: 0;
+                left: 0;
+                margin-bottom: 20px;
+                padding: 0 auto;
+                margin-top: 30px;
+                .logo {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                br {
+                    display: inline;
+                }
+                p {
+                    text-align: center;
+                }
+                
+            }
+        }
+        // ----------------------------------
+        // ハンバーガーメニュー 
+        // ----------------------------------
+        .hamburger-nav {
+            position: relative;
+            ul {
+                flex-direction: column;
+                position: absolute;
+                top: 15px;
+                left: 25px;
+            }
+            li a {
+                font-size: 20px;
+            }
+            .sns {
+                position: absolute;
+                top: 230px;
+                left: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

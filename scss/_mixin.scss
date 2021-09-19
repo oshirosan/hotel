@@ -1,0 +1,38 @@
+@mixin line(){
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #cccccc;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+@mixin center() {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin height() {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+@mixin efect(){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #ececec;
+    transition: .3s;
+}
+@mixin style(){
+    color: $main-color;
+    font-size: $large;
+    font-family: 'carter one';
+    letter-spacing: 2px;
+}
